@@ -1,4 +1,7 @@
 from levelup.direction import Direction
+from levelup.position import Position
+from typing import Tuple
+
 
 class Map():
         

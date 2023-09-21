@@ -16,15 +16,7 @@ class TestMap(TestCase):
     #     self.assertEqual(3, testobj.positions[3][0].x)
     #     self.assertEqual(7, testobj.positions[3][7].y)
 
-    # def test_is_position_valid_when_true(self):
-    #     testobj = Map()
-    #     self.assertTrue(testobj.is_position_valid(Position(3,4)))
-
-    # def test_is_position_valid_when_x_too_small(self):
-    #     testobj = Map()
-    #     self.assertFalse(testobj.is_position_valid(Position(-1, 4)))
-
-    # def test_is_position_valid_when_x_too_big(self):
+   
     #     testobj = Map()
     #     self.assertFalse(testobj.is_position_valid(Position(10, 4)))
 
