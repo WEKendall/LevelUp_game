@@ -23,14 +23,14 @@ class Map():
         self.positions = temp_pos
 
     def isValidPostion(self, position :Position) -> bool:
-        # ToDo (validate new postion out of range or not)
+        # Validate new postion out of range or not
         if position.x >= 0 and position.x < self.size[0] and position.y >= 0 and position.y < self.size[1]:
             return True
         else:
             return False
 
     def calculatePosition(self, current_position, direction: Direction):
-        # ToDo (calculate new position based on curPos + direction (+-1))
+        # calculate new position based on curPos + direction (+-1)
         if direction == Direction.NORTH:
             new_position = Position(current_position.x, current_position.y + 1)
         elif direction == Direction.SOUTH:
