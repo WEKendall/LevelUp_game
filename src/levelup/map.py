@@ -1,0 +1,33 @@
+from levelup.direction import Direction
+
+class Map():
+        
+    starting_position = Position(0,0)
+    positions = []
+    size: Tuple[int, int] = (10, 10)
+
+    def __init__(self):
+        self.create_positions()
+
+    def create_positions(self) -> None:
+        temp_pos = []
+        for x in range(self.size[0]):
+            y_range = []
+            for y in range(self.size[1]):
+                new_pos = Position(x,y)
+                y_range.append(new_pos)
+            temp_pos.append(y_range)
+        self.positions = temp_pos
+
+    def getPostion():
+        return (self.x, self.y)
+
+    def isValidPostion(self, curPos) -> bool:
+        # ToDo (validate new postion out of range or not)
+
+        pass
+
+    def calculatePosition(self, curPos, direction: Direction):
+        # ToDo (calculate new position based on curPos + direction (+-1))
+
+        pass   
