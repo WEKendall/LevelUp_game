@@ -1,4 +1,5 @@
 class Position ():
+#This establishes and initializes the position class
 
     x = -100
     y = -100
