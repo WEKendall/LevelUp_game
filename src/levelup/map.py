@@ -22,7 +22,7 @@ class Map():
             temp_pos.append(y_range)
         self.positions = temp_pos
 
-    def isValidPostion(self, position :Position) -> bool:
+    def is_position_valid(self, position :Position) -> bool:
         # Validate new postion out of range or not
         if position.x >= 0 and position.x < self.size[0] and position.y >= 0 and position.y < self.size[1]:
             return True
