@@ -41,3 +41,8 @@ class Map():
             new_position = Position(current_position.x - 1, current_position.y)
         else:
             pass  
+               
+        if self.is_position_valid(new_position) == True:
+            return new_position
+        else:
+            return current_position
